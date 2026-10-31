@@ -1266,6 +1266,9 @@ MCP 客户端是 AI 的“操作台”，以下是几个热门选择：
 | [KiCAD-MCP-Server](https://github.com/mixelpixx/KiCAD-MCP-Server) | KiCAD 电路设计 MCP：让大模型创建与修改原理图和 PCB 布局、放置元件、布线并导出制造文件。 | 社区实现, Python 开发 🐍, 本地运行 🏠, MIT, EDA/PCB 设计。 |
 | [genieacs-mcp](https://github.com/GeiserX/genieacs-mcp) | 面向开源 TR-069 ACS GenieACS 的 MCP 服务器：按标签、型号、固件或任意 TR-069 参数查询路由器、ONT 等 CPE 设备，读取参数、任务与故障，并可重启设备、下发固件、设置参数。 | 社区实现, Go 开发 🏎️, 本地运行 🏠, GPL-3.0, 7 个资源 + 12 个工具, `npx -y genieacs-mcp`。 |
 | [OnlyClaws ESP (onlyclaws-esp)](https://github.com/shinjiyu/onlyclaws-esp) | 给 Agent 一只伸进现实的爪子：ESP32-S3 只烧一次固件，之后通过 HTTP 下发 Lua（屏/音频/传感器/RoArm 机械臂）；另附 stdio MCP（`jev_servo`，机械臂 presence 工具）与 [skill.md](https://onlyclaws.world/api/agent/skill.md)。 | 社区实现, Python/C++ 开发 🐍, 本地可自建控制面 🏠, 嵌入式 📟, MIT, 中英 README。 |
+| [汇智网 PLC 云仿真（LAD Sim）](https://tia.hubwiz.com/sim/) | 面向 AI 编程助手的云端 PLC 仿真 MCP：梯形图按网络逐扫描执行（触点、线圈、定时器/计数器、FC/FB 调用与跳转），SCL 源码可直接提交仿真，结果确定可复现；用于让 Claude Code、Cursor 等助手自己验证程序，不必在本机装博途或 PLCSIM。 | 官方实现（汇智网 hubwiz.com）🎖️, 云服务 ☁️, 远程端点 `https://tia.hubwiz.com/sim/mcp`（Streamable HTTP）, 需 API Key（微信扫码即得）, 新用户 100 次免费调用、之后按额度付费, 中文文档。 |
+| [LadDoc Cloud](https://tia.hubwiz.com/lad/) | 把 AI 生成的 LadDoc（JSON 格式的 PLC 梯形图文档，专为 AI 生成/修改梯形图设计）按 lad-ir 的 D9 规则校验后，确定性生成可直接导入 TIA Portal 的 SimaticML 块文件（FC / FB / OB）。 | 官方实现（汇智网）🎖️, 云服务 ☁️, 远程端点 `https://tia.hubwiz.com/lad/mcp`, 需 API Key, 100 次免费调用, 中文文档。 |
+| [TIA Portal Docs](https://tia.hubwiz.com/ai-coding-docs/) | 面向 AI 编程助手的 TIA Portal 文档网关：语义检索 2800+ 个官方编程章节，函数块、指令、数据类型、系统常量一查即得，让助手写出来的 SCL 有据可依。 | 官方实现（汇智网）🎖️, 云服务 ☁️, 远程端点 `https://tia.hubwiz.com/ai-coding-docs/mcp`, 需 API Key, 100 次免费请求, 中文文档。 |
 
 ---
 
